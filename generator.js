@@ -1,20 +1,20 @@
 function generator() {
-// nicki
+// nick
 var firstPart = ["Arhur", "Brzegina", "Bożątko", "Buc", "Bzionek", "Cicha","Jaroszek", "Czart", "Dziwożony", "Owsik", "Surma", "Anonek", "Qwer"];
 
-// generowanie nicków
+// gen nick
 var name = firstPart[Math.floor(Math.random() * firstPart.length)]
 // div
 if (document.getElementById("name")) {
 document.getElementById("placeholder").removeChild(document.getElementById("name"));
 }
-// tworzenie elemementu
+// create element
 var element = document.createElement("div");
 element.setAttribute("id", "name");
 element.appendChild(document.createTextNode(name));
 document.getElementById("placeholder").appendChild(element);
 }
-//motyw jasny
+//white
 function motyw1() {
 	document.body.style.background = "#f5f3f2";
 	//conteiner
@@ -35,7 +35,7 @@ function motyw1() {
 	
 
 }
-//motyw ciemny
+//black
 function motyw2() {
 	document.body.style.background = "#1d1f21";
 	//conteiner
